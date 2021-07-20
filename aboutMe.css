@@ -1,0 +1,33 @@
+body {
+    background-color: silver;
+  
+    
+}
+h1{
+    color: purple;
+    font-family :'Times New Roman', Times, serif;
+    font-weight :bold;
+}
+p{
+    font-family : Cambria, Cochin, Georgia, Times, Times New Roman, serif;
+}
+.validator {
+    float: right;
+}
+h2 {
+    color : forestgreen;
+    
+}
+.behaviour {
+    color: darkorange;
+    font-style: italic;
+}
+.imdb {
+    color :red;
+}
+.figure {
+    float :left;
+}
+#clear {
+    clear :left;
+}
