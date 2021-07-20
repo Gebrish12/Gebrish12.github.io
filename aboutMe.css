@@ -1,6 +1,6 @@
 body {
     background-color: silver;
-  
+     
     
 }
 h1{
@@ -30,4 +30,20 @@ h2 {
 }
 #clear {
     clear :left;
+}
+a {
+    text-decoration : none;
+}
+a:hover {
+    text-decoration :underline;
+    color : red;
+}
+#drop-caps::first-letter {
+    float: left;
+    font-family: Georgia;
+    font-size: 75px;
+    line-height: 60px;
+    padding-top: 4px;
+    padding-right: 8px;
+    padding-left: 3px;
 }
