@@ -1,5 +1,33 @@
-img {
-    width: 100px;
-    border-radius: 10px;
+body{
+    background-color : lightgrey;
+
+}
+#main-header {
+    background-color : darkgrey;
+    
+    
+  
 }
 
+#main-header img {
+      border-radius: 50%;
+      width :150px;
+      height : 200px;
+ }
+
+#main-footer {
+    background-color : darkseagreen;
+   
+}
+#main-footer h6{
+    text-align : "left";
+}
+
+#main-footer p{
+    text-align:right;
+}
+
+#showcase {
+    background-color: lightgrey;
+    height : 300px;
+}
