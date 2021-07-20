@@ -49,3 +49,9 @@ a:hover {
     padding-right: 8px;
     padding-left: 3px;
 }
+dt{
+    font-family:'Times New Roman', Times, serif;
+    font-style:italic;
+    color :blueviolet;
+       
+}
