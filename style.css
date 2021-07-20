@@ -4,6 +4,7 @@ body{
 }
 #main-header {
     background-color : darkgrey;
+    background-image : url('image.JPG');
     
     
   
@@ -17,17 +18,23 @@ body{
 
 #main-footer {
     background-color : darkseagreen;
+    height :100px;
    
 }
-#main-footer h6{
+#main-footer h4{
     text-align : "left";
+   
 }
 
-#main-footer p{
-    text-align:right;
-}
+    #main-footer p {
+        text-align: right;
+        float :right;
+    }
 
 #showcase {
     background-color: lightgrey;
     height : 300px;
+}
+#showcase ul{
+    color :purple;
 }
