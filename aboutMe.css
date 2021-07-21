@@ -7,14 +7,21 @@ h1{
     color: purple;
     font-family :'Times New Roman', Times, serif;
     font-weight :bold;
+    font-size:30px;
 }
 p{
     font-family : Cambria, Cochin, Georgia, Times, Times New Roman, serif;
-    font-size : medium;
+    font-size : 20px;
     font-weight :bold;
 }
 .validator {
-    float: right;
+    float: left;
+}
+.caption{
+    font-size:15px;
+    font-family:'Times New Roman', Times, serif;
+    font-style:italic;
+    font-weight:bold;
 }
 h2 {
     color : forestgreen;
@@ -26,6 +33,10 @@ h2 {
 }
 .imdb {
     color :red;
+}
+ol{
+    display:flex;
+    flex-direction:column-reverse;
 }
 .figure {
     float :left;
@@ -51,7 +62,14 @@ a:hover {
 }
 dt{
     font-family:'Times New Roman', Times, serif;
-    font-style:italic;
+    
     color :blueviolet;
        
+}
+.movies{
+    font-style:italic;
+    font-family:'Times New Roman', Times, serif;
+    color:firebrick;
+    font-weight:bold;
+    font-size:15px;
 }
