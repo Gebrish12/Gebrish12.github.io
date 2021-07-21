@@ -21,6 +21,7 @@ ul {
 }
 pre{
     text-align:left;
+    margin-left:0;
 }
 #title {
     color: #A4A400;
