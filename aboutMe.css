@@ -54,7 +54,7 @@ a:hover {
 #drop-caps::first-letter {
     float: left;
     font-family: Georgia;
-    font-size: 75px;
+    font-size: 60px;
     line-height: 60px;
     padding-top: 4px;
     padding-right: 8px;
