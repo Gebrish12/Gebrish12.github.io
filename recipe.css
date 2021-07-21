@@ -6,12 +6,18 @@ body {
     background-repeat: repeat;
     background-attachment:fixed;
 }
+h1{
+    letter-spacing:0.25em;
+}
 #image {
     width :150px;
     height: 150px;
 }
 .validator{
 
+}
+ul {
+    list-style: url('https://courses.cs.washington.edu/courses/cse190m/09sp/homework/1/pie_icon.gif')
 }
 pre{
     text-align:left;
@@ -24,6 +30,9 @@ pre{
     font-size: 22pt;
     font-weight: bold;
     font-family: Lucida Sans Unicode, Helvetica, Arial;
+}
+#cake{
+    text-decoration-line:line-through;
 }
 .subtitles {
     color: #A4A400;
