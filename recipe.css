@@ -19,9 +19,9 @@ h1{
 ul {
     list-style: url('https://courses.cs.washington.edu/courses/cse190m/09sp/homework/1/pie_icon.gif')
 }
-pre{
-    text-align:left;
-    margin-right:1000px;
+#pre {
+    text-align: left;
+    margin: 1em 0;
 }
 #title {
     color: #A4A400;
