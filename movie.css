@@ -41,26 +41,50 @@ h1 {
     border-top-left-radius: 15px;
 }
 #first-paragraph {
-    float: right;
     border: 0px;
     width: 250px;
     background-color: #A2B964;
-    height: 437pt;
+    height:auto;
     border-bottom-right-radius: 15px;
     font-size: 8pt;
     font-family: Arial, Helvetica, sans-serif;
+    text-indent: 10pt;
     float: right;
     clear: right;
-    text-indent: 10pt;
+    line-height:13.5px;
 }
-#columns{
+#columns{ 
+    column-span:all;
     column-count:2;
+    column-fill:balance;
     column-gap: 2%;
+    padding: 5px;
+    
 }
 .quotes {
     border: 2px solid gray;
     border-radius:10px;
-    font-size: 10pt;
+    font-size: 8pt;
     font-weight:bold;
     background-color: #E8DC9B;
+    padding:8px;
+}
+#rightside {
+    padding-top:1px;
+}
+.tags {
+    float: left;
+    
+    padding-top: 0.5px;
+    padding-right: 4px;
+    clear:left;
+}
+#cheat{
+    opacity:0%;
+}
+#base {
+    background-color: #A2B964;
+    text-align:center;
+    height:15px;
+    padding-bottom:15px;
 }
