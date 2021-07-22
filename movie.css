@@ -83,6 +83,9 @@ h1 {
     opacity:0%;
 }
 #base {
+    margin-bottom:0px;
+    border-bottom-right-radius:10px;
+    border-bottom-left-radius:10px;
     background-color: #A2B964;
     text-align:center;
     height:30px;
