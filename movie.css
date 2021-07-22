@@ -91,7 +91,9 @@ h1 {
     height:30px;
     padding-bottom:15px;
 }
-#validator{
-    float:right;
-    display:inline;
+#validator {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    opacity: 75%;
 }
