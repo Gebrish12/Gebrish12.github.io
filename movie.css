@@ -68,6 +68,7 @@ h1 {
     font-weight:bold;
     background-color: #E8DC9B;
     padding:8px;
+    text-align:justify;
 }
 #rightside {
     padding-top:1px;
@@ -75,7 +76,7 @@ h1 {
 .tags {
     float: left;
     
-    padding-top: 0.5px;
+    padding-bottom: 5px;
     padding-right: 4px;
     clear:left;
 }
