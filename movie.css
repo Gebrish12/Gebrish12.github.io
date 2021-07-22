@@ -88,3 +88,7 @@ h1 {
     height:15px;
     padding-bottom:15px;
 }
+#validator{
+    float:right;
+    display:inline;
+}
