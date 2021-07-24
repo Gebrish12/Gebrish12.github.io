@@ -63,6 +63,7 @@ console.log("Expected output of maxOfThree(55,4,44) is 55  " + myFunctionTest(55
             }
         }
         console.log("Expected output of isVowel(e) is true  " + myFunctionTest(true, isVowel('e')));
+        console.log("Expected output of isVowel(e) is true  " + myFunctionTest(false, isVowel('e')));
 
         /* finding the sum of numbers*/
 
@@ -75,6 +76,7 @@ console.log("Expected output of maxOfThree(55,4,44) is 55  " + myFunctionTest(55
             return sum;
         }
         console.log("Expected out put of sum of [2, 4, 5, 6, 5] is 22  " + myFunctionTest(22,Sum(array)));
+        console.log("Expected out put of sum of [2, 4, 5, 6, 5] is 22  " + myFunctionTest(20, Sum(array)));
 
         /* finding the multiple of numbers*/
 
@@ -86,6 +88,7 @@ console.log("Expected output of maxOfThree(55,4,44) is 55  " + myFunctionTest(55
             return multiple;
         }
         console.log("Expected out put of sum of [2, 4, 5, 6, 5] is 1200  " + myFunctionTest(1200, Multiply(array)));
+        console.log("Expected out put of sum of [2, 4, 5, 6, 5] is 1200  " + myFunctionTest(100, Multiply(array)));
 
         /* finding the reverse of the a string */
 
@@ -97,6 +100,7 @@ console.log("Expected output of maxOfThree(55,4,44) is 55  " + myFunctionTest(55
             return str;
         }
         console.log("Expected out put reverse('hello') is olleh " + myFunctionTest('olleh', reverse('hello')));
+        console.log("Expected out put reverse('hello') is olleh " + myFunctionTest('ollhe', reverse('hello')));
 
         /* finding the longest word from an array */
 
@@ -112,7 +116,7 @@ console.log("Expected output of maxOfThree(55,4,44) is 55  " + myFunctionTest(55
             return word;
         }
         console.log("Expected out put longest word from ['hello','i','am','coming'] is coming " + myFunctionTest('coming',longestWord(array1) ));
-
+        console.log("Expected out put longest word from ['hello','i','am','coming'] is coming " + myFunctionTest('hello', longestWord(array1)));
 
         /* finding words greater than i from an array*/
 
