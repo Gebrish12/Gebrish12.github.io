@@ -26,6 +26,34 @@ var EXERCISE = "  o\n" +
     " \\o/\n" +
     "  #\n" +
     "_/ \\_\n";
+var AIRPLANE =
+   "       ______\n" +
+   "      _\\ _~-\\___ \n"+
+   "= ===(____AA____D \n"+
+     "        \\_____\\___________________,-~~~~~~~`-.._ \n"+
+      "        /      o O o o o o O O o o o o o o O o  |\\_ \n"+
+       "         `~-.__        ___..----..                  ) \n"+
+      "               `---~~\\___________/------------ ````` \n"+
+    "                =  ===(_________D \n" +
+    "=====\n"+
+    "                 ______\n" +
+    "                _\\ _~-\\___ \n" +
+    "          = ===(____AA____D \n" +
+    "                  \\_____\\___________________,-~~~~~~~`-.._ \n" +
+    "                  /      o O o o o o O O o o o o o o O o  |\\_ \n" +
+    "                   `~-.__        ___..----..                  ) \n" +
+    "                        `---~~\\___________/------------ ````` \n" +
+    "                          =  ===(_________D \n"+
+    "=====\n"+
+        "                                                ______\n" +
+        "                                               _\\ _~-\\___ \n" +
+        "                                         = ===(____AA____D \n" +
+        "                                                 \\_____\\___________________,-~~~~~~~`-.._ \n" +
+        "                                                 /      o O o o o o O O o o o o o o O o  |\\_ \n" +
+        "                                                  `~-.__        ___..----..                  ) \n" +
+        "                                                       `---~~\\___________/------------ ````` \n" +
+        "                                                         =  ===(_________D \n"
+    ;
 
 var JUGGLER = "   o\n" +
     "   O\n" +
@@ -644,6 +672,8 @@ var ANIMATIONS = [];
 ANIMATIONS["Blank"] = ANIMATIONS["blank"] = ANIMATIONS["BLANK"] = "";
 ANIMATIONS["Custom"] = ANIMATIONS["custom"] = ANIMATIONS["CUSTOM"] = CUSTOM;   // you could change the value of this in your code
 ANIMATIONS["Exercise"] = ANIMATIONS["exercise"] = ANIMATIONS["EXERCISE"] = EXERCISE;
+ANIMATIONS["Airplane"] = ANIMATIONS["airplane"] = ANIMATIONS["AIRPLANE"] = AIRPLANE;
 ANIMATIONS["Juggler"] = ANIMATIONS["juggler"] = ANIMATIONS["JUGGLER"] = JUGGLER;
 ANIMATIONS["Bike"] = ANIMATIONS["bike"] = ANIMATIONS["BIKE"] = BIKE;
 ANIMATIONS["Dive"] = ANIMATIONS["dive"] = ANIMATIONS["DIVE"] = DIVE;
+
