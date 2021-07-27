@@ -82,15 +82,25 @@ input, select {
 #add {
     position: absolute;
     right: 80px;
+    color:blue;
 }
 
 #cancel {
     position: absolute;
     right: 240px;
+    color:orangered;
 }
 
 #reset {
     position: absolute;
     right: 180px;
+    color:lightblue;
+}
+label{
+    font-size:20px;
+    font-family:'Times New Roman', Times, serif;
+}
+#validator{
+  margin-bottom:10px;
 }
   
