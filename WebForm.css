@@ -1,0 +1,82 @@
+header{
+    width:100%;
+    border:2px solid gray;
+    display:flex;
+    position:relative;
+    background-color:dodgerblue;
+    height:80px;
+    text-align:center;
+    font-size:larger;
+    font-weight:bold;
+    color:white;
+ 
+}
+#s{
+    border:0px;
+}
+h1{
+    padding-left:30px;
+}
+header>div{
+    border-right:2px solid white;
+    height:50px;
+    margin:20px;
+    padding-left:20px;
+    padding-right:20px;
+
+}
+#signout {
+    position:absolute;
+    right:0px;
+    border:0px;
+}
+#pn{
+    grid-area:pn;
+
+}
+#name{
+    grid-area:name;
+}
+#uprice{
+    grid-area:price;
+}
+#qstock {
+    grid-area: stock;
+}
+#suplier {
+    grid-area: supplier;
+ 
+}
+#dsupp {
+    grid-area: dsup;
+}
+#no{
+    grid-area:no;
+}
+
+.main-container {
+    padding:40px;
+    height:350px;
+    display: grid;
+    grid-template-areas:
+        'pn  stock'
+        'name supplier'
+        'price dsup'
+        'no buttons';
+}
+.main-container>div{
+    width:300px;
+    height:30px;
+}
+input, select {
+    width: 150%;
+    height: 30px;
+}
+#buttons{
+    grid-area:buttons;
+   
+   padding-right:0px;
+  
+   
+}
+  
