@@ -14,9 +14,9 @@ function start() {
     })();
     stopButton.disabled = false;
     startButton.disabled = true;
-};
+}
 
-function stop(time) {
+function stop() {
     stopButton.disabled = true;
     startButton.disabled = false;
     clearTimeout(timer);
