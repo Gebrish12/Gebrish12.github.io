@@ -79,4 +79,18 @@ input, select {
   
    
 }
+#add {
+    position: absolute;
+    right: 80px;
+}
+
+#cancel {
+    position: absolute;
+    right: 240px;
+}
+
+#reset {
+    position: absolute;
+    right: 180px;
+}
   
