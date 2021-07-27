@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="regExp.css" type="text/css" rel="stylesheet">
+    </head>
+    <body>
+
+        <form class="container">
+            <div class="email">
+
+                <label id="name">Email address </label> <br>
+
+                <input id="em" type="text" placeholder="Enter email" name="email" required>
+                <p id='sm11'> We'll never share your email with anyone else.</p>
+            </div>
+
+
+            <div class="password">
+
+                <label id="passwd">Password </label>
+                <input id="ps" type="password" placeholder="Password" name="psw" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{10}" title=" Password field is at least 10 characters in length and contain at least one number and one uppercase and lowercase letter" required>
+            </div>
+            <div class="email">
+
+                <label id="name">Website URL </label> <br>
+
+                <input id="em" type="text" placeholder="Enter url" name="website" pattern="https?://.+" title="enter the correct url(https?.+)" required>
+
+            </div>
+            <div class="checkme">
+
+                <label><input type="checkbox" name="remember"> Check me out</label><br>
+                <button type="submit">Submit</button>
+            </div>
+
+        </form>
+        <div id="validate">
+            <a href="https://validator.w3.org/nu/?doc=https://gebrish12.github.io/regExp.html">
+                <img src="image/html.png" alt="html validator">
+            </a><br>
+            <a href="https://jigsaw.w3.org/css-validator/validator?uri=https://gebrish12.github.io/regExp.css">
+                <img src="image/css.png" alt="Valid CSS!">
+            </a>
+
+
+        </div>
+
+    </body>
+</html>
