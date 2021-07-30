@@ -20,6 +20,7 @@ body{
 #main-footer {
     background-color : darkseagreen;
     height :100px;
+    margin-bottom:0px;
    
 }
 #main-footer h4{
@@ -34,7 +35,7 @@ body{
 
 #showcase {
     background-color: lightgrey;
-    height : 300px;
+    height : auto;
 }
 #showcase ul{
     color :purple;
