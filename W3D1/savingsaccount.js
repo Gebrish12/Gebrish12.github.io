@@ -1,20 +1,20 @@
 class SavingsAccount extends Account {
 	constructor(interest, number) {
 		super(number);
-		this.interest = interest;
+		this._interest = interest;
 	}
 	setInterest(inte) {
-		this.interest = inte;
+		this._interest = inte;
 	}
 	getInterest() {
-		return this.interest;
+		return this._interest;
 	}
 	addInterest() {
-		this.deposit(this.balance * (this.interest / 100));
+		this.deposit(this.getBalance() * this.getInterest() / 100);
 	}
 	endOfMonth() {
 		this.addInterest();
-		return `Interest added SavingsAccount ${this.getNumber()}: balance: ${this.getBalance()} interest: ${this._intreset}`;
+		return `Interest added SavingsAccount ${this.getNumber()}: balance: ${this.getBalance()} interest: ${this._interest}`;
 	}
 
 	toString() {
