@@ -70,13 +70,13 @@
 
     describe("SavingsAccount", function () {
         beforeEach(() => {
-            savingsAccount = new SavingsAccount(0.08, 612857);
+            savingsAccount = new SavingsAccount(0.09, 54321);
         });
 
         describe("setInterest", function () {
             it("sets account interest", function () {
-                savingsAccount.setInterest(0.35);
-                assert.equal(savingsAccount.getInterest(), 0.35);
+                savingsAccount.setInterest(0.15);
+                assert.equal(savingsAccount.getInterest(), 0.15);
             });
         });
 
@@ -98,7 +98,7 @@
             it("Prints details of savings account", function () {
                 savingsAccount.deposit(100);
                 savingsAccount.addInterest()
-                assert.equal(savingsAccount.endOfMonth(), 'Interest added SavingsAccount 612857: balance: 100.180081 interest: 0.09');
+                assert.equal(savingsAccount.endOfMonth(), 'Interest added SavingsAccount 54321: balance: 100.180081 interest: 0.09');
             });
         });
 
@@ -111,7 +111,7 @@
 
     describe("CheckingAccount", function () {
         beforeEach(() => {
-            checkingAccount = new CheckingAccount(1000, 612857);
+            checkingAccount = new CheckingAccount(500, 612857);
         });
 
         describe("setOverdraftLimit", function () {
@@ -123,7 +123,7 @@
 
         describe("getOverdraftLimit", function () {
             it("Returns account overdraftLimit", function () {
-                assert.equal(checkingAccount.getOverdraftLimit(), 1000);
+                assert.equal(checkingAccount.getOverdraftLimit(), 800);
             });
         });
 
@@ -137,7 +137,7 @@
             describe("When the given amount is less than or equal to 0", function () {
                 it("Throws Error with Over the draft limit", function () {
                     checkingAccount.deposit(100);
-                    assert.throws(() => { checkingAccount.withdraw(1101) }, Error, "Over the draft limit");
+                    assert.throws(() => { checkingAccount.withdraw(901) }, Error, "Over the draft limit");
                 });
             });
 
@@ -155,7 +155,7 @@
                 it("Prints warning details of checking account", function () {
                     checkingAccount.deposit(120);
                     checkingAccount.withdraw(300);
-                    assert.equal(checkingAccount.endOfMonth(), 'Warning, low balance CheckingAccount 54321: balance: -180 overdraft limit: 1000');
+                    assert.equal(checkingAccount.endOfMonth(), 'Warning, low balance CheckingAccount 612857: balance: -180 overdraft limit: 500');
                 });
             });
 
@@ -189,7 +189,7 @@
 
         describe("addCheckingAccount", function () {
             it("adds a checking account, and returns number of accounts", function () {
-                assert.equal(bank.addCheckingAccount(1000, 123), 1);
+                assert.equal(bank.addCheckingAccount(500, 123), 1);
             });
         });
 
