@@ -123,7 +123,7 @@
 
         describe("getOverdraftLimit", function () {
             it("Returns account overdraftLimit", function () {
-                assert.equal(checkingAccount.getOverdraftLimit(), 800);
+                assert.equal(checkingAccount.getOverdraftLimit(), 500);
             });
         });
 
