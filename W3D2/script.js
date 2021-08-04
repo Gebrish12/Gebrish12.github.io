@@ -41,11 +41,14 @@ $(document).ready(function () {
                 "click": function () {
                     this.remove();
                 },
-               
+                "mouseenter": function () {
+
+                    (this).css("opacity", "0.7");
+                }
             }));
         }
     }
-    
+   
 
     $("form").submit(function (e) {
         e.preventDefault();
