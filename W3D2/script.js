@@ -41,9 +41,7 @@ $(document).ready(function () {
                 "click": function () {
                     this.remove();
                 },
-                "hover": function () {
-                    this.fadeTo(2000, 0.7);
-                }
+               
             }));
         }
     }
