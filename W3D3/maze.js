@@ -9,31 +9,29 @@ $(document).ready(function () {
     start.click(function () {
         $("#status").text('Move mouse to End in order to win the game');
         gameStart = true;
-        if (boundary.hasClass('youlose')) {
-            boundary.removeClass('youlose');
+        if (boundary.hasClass('lose')) {
+            boundary.removeClass('lose');
         }
         boundary.mousemove(function () { loss(); })
     });
 
     end.mousemove(function () {
         if (gameStart == true) won();
-        else if (gameStart && boundary.hasClass('youlose')) loss();
-
     });
 
     function won() {
         // alert("You win! :]");
         gameStart = false;
         $("#status").text("You win! :)");
-        alert("You win! :)");
+      //  alert("You win! :)");
     }
 
     function loss() {
         if (gameStart) {
             gameStart = false;
-            boundary.addClass('youlose');
+            boundary.addClass('lose');
             $("#status").text('Sorry, you lost. :(');
-            alert('Sorry, you lost. :(');
+            //alert('Sorry, you lost. :(');
         }
     }
 })
