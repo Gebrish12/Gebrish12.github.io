@@ -20,7 +20,6 @@ $(document).ready(function () {
     });
 
     function won() {
-        // alert("You win! :]");
         gameStart = false;
         $("#status").text("You win! :)");
       //  alert("You win! :)");
