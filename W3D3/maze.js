@@ -1,4 +1,4 @@
-"use strict";
+'use strict';
 $(document).ready(function () {
     var start = $("#start");
     var end = $("#end");
