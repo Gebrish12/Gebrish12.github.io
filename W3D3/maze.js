@@ -1,10 +1,11 @@
+"use strict"
 $(document).ready(function () {
     var start = $("#start");
     var end = $("#end");
     var maze = $("#maze");
     var boundary = $(".boundary");
     var gameStart = false;
-    maze.mouseleave(function () { loss() });
+    maze.mouseleave(function () { loss(); });
 
     start.click(function () {
         $("#status").text('Move mouse to End in order to win the game');
@@ -22,7 +23,7 @@ $(document).ready(function () {
     function won() {
         gameStart = false;
         $("#status").text("You win! :)");
-      //  alert("You win! :)");
+        //  alert("You win! :)");
     }
 
     function loss() {
@@ -33,4 +34,4 @@ $(document).ready(function () {
             //alert('Sorry, you lost. :(');
         }
     }
-})
+});
