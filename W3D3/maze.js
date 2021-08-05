@@ -1,4 +1,4 @@
-"use strict"
+"use-strict";
 $(document).ready(function () {
     var start = $("#start");
     var end = $("#end");
@@ -13,7 +13,7 @@ $(document).ready(function () {
         if (boundary.hasClass('lose')) {
             boundary.removeClass('lose');
         }
-        boundary.mousemove(function () { loss(); })
+        boundary.mousemove(function () { loss(); });
     });
 
     end.mousemove(function () {
