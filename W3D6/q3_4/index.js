@@ -17,10 +17,16 @@ const laptop = [
 const CART = [
     { name: 'iphone 11', price: '$1000', quantity: 1 },
     { name: 'iphone 7', price: '$1400', quantity: 2 },
-    { name: 'DELL', price: '$850', quantity: 1}]
+    { name: 'DELL', price: '$850', quantity: 1 }]
+app.get('/product', (req, res)=>{
+    res.render('products', {
+        products: [...mobile, ...laptop]
+        
+    })
+})
 app.get('/product/:userQuery/:id', (req, res) => {
     if (req.params.userQuery === 'mobile') {
-        res.render("product", {
+        res.render("product_to_order", {
            // products: mobile,
              ...mobile.find(e => e.id === parseInt(req.params.id)),
         });
