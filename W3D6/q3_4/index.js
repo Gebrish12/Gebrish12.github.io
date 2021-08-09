@@ -24,14 +24,14 @@ app.get('/product', (req, res)=>{
         
     })
 })
-app.get('/product/:userQuery/:id', (req, res) => {
-    if (req.params.userQuery === 'mobile') {
+app.get('/product/:productName/:id', (req, res) => {
+    if (req.params.productName === 'mobile') {
         res.render("product_to_order", {
            // products: mobile,
              ...mobile.find(e => e.id === parseInt(req.params.id)),
         });
     }
-    else if (req.params.userQuery === 'laptop') {
+    else if (req.params.productName === 'laptop') {
         res.render("product", {
           //  products:laptop,
              ...laptop.find(e => e.id === parseInt(req.params.id)),
