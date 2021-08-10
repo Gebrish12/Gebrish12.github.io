@@ -1,0 +1,12 @@
+<%-include ('head.ejs') %>   
+
+        <% for (let key in products) { %>
+            <li>Name: <%= products[key].name %>,
+                    Price: <%= products[key].price %>
+                        Quantity: <%= products[key].quantity %>
+            </li>
+                            <% } %>
+            
+  
+
+<%-include ('end.ejs') %>   
