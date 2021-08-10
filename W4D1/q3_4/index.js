@@ -30,7 +30,7 @@ app.use(function (req, res, next) {
 });
 app.get('/product', (req, res)=>{
     res.render('products', {
-        products: [...mobile, ...laptop]
+        productss: [...mobile, ...laptop]
         
     })
 })
@@ -38,21 +38,23 @@ app.get('/product/:productName/:id', (req, res) => {
     if (req.params.productName === 'mobile') {
         res.render("product_to_order", {
            // products: mobile,
-             ...mobile.find(e => e.id === parseInt(req.params.id)),
+            ...mobile.find(e => e.id === parseInt(req.params.id)),
+            productss: [...mobile, ...laptop],
         });
     }
     else if (req.params.productName === 'laptop') {
         res.render("product_to_order", {
           //  products:laptop,
-             ...laptop.find(e => e.id === parseInt(req.params.id)),
+            ...laptop.find(e => e.id === parseInt(req.params.id)),
+            productss: [...mobile, ...laptop],
         });
     }
 });
 app.post('/addToCart', (req, res) => {
     let item = req.body;
-    let exist = req.session.cart[item.name];
-    if (exist) {
-        exist.quantity += 1;
+    let isAvailable = req.session.cart[item.name];
+    if (isAvailable) {
+        isAvailable.quantity += 1;
     }
     else {
         item.quantity = 1;
@@ -62,7 +64,8 @@ app.post('/addToCart', (req, res) => {
 })
 app.get('/cart', (req, res) => {
     res.render("shoppingcart", {
-        products: req.session.cart
+        products: req.session.cart,
+        productss: [...mobile, ...laptop],
     });
 });
 

@@ -1,2 +1,13 @@
+<hr/>
+    <h2> PRODUCTS AVAILABLE ON THE STOCK </h2>
+    <ul>
+    <% for (let i=0; i < productss.length; i++) { %>
+            <li>Name: <%= productss[i].name %>,
+                    Price: <%= productss[i].price %>
+                        Description: <%= productss[i].description %>
+                        Id:<%=productss[i].id%>
+            </li>
+                            <% } %>
+ </ul>;
 </body>
     </html>
